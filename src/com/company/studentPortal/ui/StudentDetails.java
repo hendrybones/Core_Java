@@ -37,5 +37,8 @@ public class StudentDetails {
 
 
     }
+    public static int insertStudentDetails(){
+
+    }
 
 }
