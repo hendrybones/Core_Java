@@ -42,7 +42,7 @@ public class CrudeDemo {
                     break;
                 case 3:
                     boolean found=false;
-                    System.out.println("Enter employee number to delete");
+                    System.out.println("Enter employee number");
                     empNo = s.nextInt();
                     i=c.iterator();
                     while (i.hasNext()){
@@ -59,7 +59,7 @@ public class CrudeDemo {
                     break;
                 case 4:
                     found = false;
-                    System.out.println("Enter employee number");
+                    System.out.println("Enter employee number to delete");
                     empNo = s.nextInt();
                     i=c.iterator();
                     while (i.hasNext()){
@@ -68,7 +68,6 @@ public class CrudeDemo {
                             i.remove();
                             found=true;
                         }
-
                     }
                     if (!found){
                         System.out.println("record not found");
