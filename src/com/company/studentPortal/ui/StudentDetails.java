@@ -10,13 +10,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Collection;
 import java.util.Date;
 import java.util.Scanner;
 
 public class StudentDetails {
-    public static void studentInfo() throws ParseException {
-        Scanner scanner=new Scanner(System.in);
-
+    public static Student  studentInfo(Scanner scanner, Collection<Student>list) throws ParseException {
+        //Scanner scanner=new Scanner(System.in);
         System.out.println("Enter your name");
         String student_name=scanner.nextLine();
 
@@ -38,6 +38,8 @@ public class StudentDetails {
         String course=scanner.nextLine();
 
         Student student=new Student(student_name,regNo,age,date,registrationDate,gender,course);
+        System.out.println(student);
+        return student;
 
 
 
